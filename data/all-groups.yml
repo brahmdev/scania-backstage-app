@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: example-groups
+  description: A collection of all Backstage groups
+spec:
+  targets:
+    - ./groups/demo-team.yml
+    - ./groups/scania-backstage-system.yml
+    - ./groups/group-users.yml
