@@ -4,14 +4,14 @@ metadata:
   name: backstage-demo-app
   description: The place to be, for great people
   links:
-    - url: https://github.com/brahmdev/scania-backstage
+    - url: https://github.com/brahmdev/scania-backstage-app
       title: BackStage Demo App
       icon: code
   annotations:
     github.com/project-slug: 'brahmdev/scania-backstage-app'
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
+  type: website
   lifecycle: development
   system: scania-backstage
   owner: demo-team
