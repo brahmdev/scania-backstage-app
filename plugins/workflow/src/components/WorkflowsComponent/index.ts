@@ -1,0 +1,1 @@
+export { WorkflowsComponent } from './WorkflowsComponent';

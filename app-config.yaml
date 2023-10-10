@@ -93,7 +93,7 @@ catalog:
         - allow: [User, Group]
 
     - type: url
-      target: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/data/all.yml
+      target: https://github.com/brahmdev/sample-create-react-app/blob/main/data/all.yml
       rules:
         - allow: [User, Group]
 

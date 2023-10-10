@@ -58,6 +58,9 @@ import {
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 
+import { WorkflowPage } from '@internal/plugin-workflow';
+
+
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
@@ -172,6 +175,10 @@ const serviceEntityPage = (
       </Grid>
     </EntityLayout.Route>
 
+    <EntityLayout.Route path="/workflow" title="Workflow">
+      <WorkflowPage />
+    </EntityLayout.Route>
+
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
@@ -188,6 +195,14 @@ const websiteEntityPage = (
       {cicdContent}
     </EntityLayout.Route>
 
+    <EntityLayout.Route path="/api" title="API">
+      <Grid container alignItems="stretch">
+        <Grid item md={12}>
+          <EntityConsumedApisCard />
+        </Grid>
+      </Grid>
+    </EntityLayout.Route>
+
     <EntityLayout.Route path="/dependencies" title="Dependencies">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item md={6}>
@@ -199,6 +214,10 @@ const websiteEntityPage = (
       </Grid>
     </EntityLayout.Route>
 
+    <EntityLayout.Route path="/workflow" title="Workflow">
+      <WorkflowPage />
+    </EntityLayout.Route>
+    
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
