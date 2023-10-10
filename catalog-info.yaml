@@ -9,8 +9,8 @@ metadata:
       icon: code
   # Example for optional annotations
   annotations:
-    github.com/project-slug: 'brahmdev/scania-backstage/backstage'
-    backstage.io/techdocs-ref: url:https://github.com/brahmdev/scania-backstage/tree/main/backstage
+    github.com/project-slug: 'brahmdev/scania-backstage-app'
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: development
