@@ -2,17 +2,17 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backstage-demo-app
-  description: An example of a Backstage application.
+  description: The place to be, for great people
   links:
-    - url: https://github.com/brahmdev/scania-backstage-app
-      title: BackStage App
+    - url: https://github.com/brahmdev/scania-backstage
+      title: BackStage Demo App
       icon: code
-  # Example for optional annotations
   annotations:
     github.com/project-slug: 'brahmdev/scania-backstage-app'
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
+  type: service
   lifecycle: development
   system: scania-backstage
   owner: demo-team
+---
