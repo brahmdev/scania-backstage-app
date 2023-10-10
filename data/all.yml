@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: all
+  name: backstage-app-root-location
   description: Location of all git controlled resources
 spec:
   targets:
