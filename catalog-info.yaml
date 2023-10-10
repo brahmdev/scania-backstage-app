@@ -4,7 +4,7 @@ metadata:
   name: BackStage App
   description: An example of a Backstage application.
   links:
-    - url: https://github.com/brahmdev/scania-backstage/tree/main/backstage
+    - url: https://github.com/brahmdev/scania-backstage-app
       title: BackStage App
       icon: code
   # Example for optional annotations
@@ -12,7 +12,7 @@ metadata:
     github.com/project-slug: 'brahmdev/scania-backstage-app'
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
+  type: service
   lifecycle: development
   system: scania-backstage
   owner: demo-team
