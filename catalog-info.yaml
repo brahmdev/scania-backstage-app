@@ -4,7 +4,7 @@ metadata:
   name: backstage-demo-app
   description: The place to be, for great people
   links:
-    - url: https://github.com/brahmdev/scania-backstage
+    - url: https://github.com/brahmdev/scania-backstage-app
       title: BackStage Demo App
       icon: code
   annotations:
