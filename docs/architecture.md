@@ -20,24 +20,24 @@ The core Backstage UI consists of the following components:
 ## The UI Plugins
 
 Each plugin is a client-side application that mounts itself on the UI. Plugins are written in TypeScript or JavaScript. They each live in their own directory in backstage/plugins. For example, the source code for the workflow plugin for this task is available at [scania-backstage-app/plugins/workflow](https://github.com/brahmdev/scania-backstage-app/tree/main/plugins/workflow).
-To create a new FE plugin, we can use below commands,
+To create a new FE plugin, we can use the below commands,
 
 `yarn new --select plugin`
 
 Please refer to [workflow plugin](https://github.com/brahmdev/scania-backstage-app/blob/main/docs/workflow-plugin.md)
 
-For detailed, Plugin architecture please refer to this [link](https://backstage.io/docs/overview/architecture-overview#plugin-architecture)
+For details, Plugin architecture please refer to this [link](https://backstage.io/docs/overview/architecture-overview#plugin-architecture)
 
 
 ## Databases
 
-Backstage uses 2 types of database mainly:
+Backstage uses 2 types of databases mainly:
 
 1. In-memory
 2. Postgres
 
 ### In-memory Database
-By default, in-memory database is configured for local Backstage development.
+By default, the in-memory database is configured for local Backstage development.
 The configuration for the same looks like below in the `app-config.yaml` or `app-config.local.yaml` file.
 
 `
@@ -49,7 +49,7 @@ backend:
 
 ### Postgres
 
-Postgres database can be configured if we want to have a persistent layer for data which is being added/configured in the Backstage. This is by default option in the production environment, and the configuration can be found inside `app-config.production.yaml` and it looks like below:
+Postgres database can be configured if we want to have a persistent layer for data that is being added/configured in the Backstage. This is by default option in the production environment, and the configuration can be found inside `app-config.production.yaml` and it looks like below:
 
 `
 backend:
@@ -62,6 +62,6 @@ backend:
       password: ${POSTGRES_PASSWORD}
 `
 
-We need to make sure the above mentioned environment varaibles are available when Backstage is being run in production mode.
+We need to make sure the above-mentioned environment variables are available when Backstage is being run in production mode.
 
 
