@@ -11,7 +11,7 @@ It uses, [Octokit](https://www.npmjs.com/package/octokit) npm library to interac
 
 So there was a need to have a API(s) that fetches list of Workflows from provided Github Repository and can also dispatch action against it. And the API needed was taken from [Octokit API docs](https://octokit.github.io/rest.js/v20)
 
-Hence there was a need to write this Plugin and [integrate into the Software Catalog](https://backstage.io/docs/plugins/integrating-plugin-into-software-catalog).
+Hence there was a need to write this Plugin and [Integrate into the Software Catalog](https://backstage.io/docs/plugins/integrating-plugin-into-software-catalog).
 
 ## Create plugin
 To create a new frontend plugin, make sure you've run yarn install and installed dependencies, then run the following on your command line (a shortcut to invoking the backstage-cli new --select plugin) from the root of your project.
