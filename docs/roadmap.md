@@ -3,6 +3,11 @@
 This Backstage instance is just for demo purpose and there needs to be many more plugins needs to be written or integrated in order to provide a smooth experience as a Developer Portal.
 Below are the few very certain things which needs to be implemented.
 
+## Workflow plugin
+
+In the currently implementation of `Workflow Plugin`, it shows the list of available workflows in the provided repository and provision to run but it does not provide a feature to run the selected workflow on a specific branch like in GitHub Actions view in GitHub.
+
+
 ## Logging and Monitoring
 
 Logging & Monitoring is crucial part of debugging for any service/website and depending upon which logging technologies are implemented across the apps/service integrated with Backstage, there is need to integrate with those logging framework, that can be as a plugin written already, for example, [Datadog Plugin](https://roadie.io/backstage/plugins/datadog/?utm_source=backstage.io&utm_medium=marketplace&utm_campaign=datadog) or [Bugsnag Plugin](https://roadie.io/backstage/plugins/bugsnag/?utm_source=backstage.io&utm_medium=marketplace&utm_campaign=bugsnag).
