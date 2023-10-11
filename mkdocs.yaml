@@ -1,4 +1,4 @@
-site_name: 'Scania Backstage demo app'
+site_name: 'Scania Backstage App'
 site_description: 'Main documentation for Demo App'
 plugins:
   - techdocs-core
