@@ -3341,7 +3341,7 @@
     prop-types "^15.7.2"
     react-use "^17.2.4"
 
-"@backstage/plugin-techdocs-backend@^1.7.0":
+"@backstage/plugin-techdocs-backend@^1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-backend/-/plugin-techdocs-backend-1.7.2.tgz#0445f9055b95e77cab1378e26a2a7422d726914f"
   integrity sha512-OXOrMQaCDBcq9DRRMrRDN40kp3QPr28rMfvw93x9VnQw/2FLK3vyV34DZg3/hUgImBhRZiYaA0F6Bhw/bW4WMA==
@@ -3422,7 +3422,7 @@
     recursive-readdir "^2.2.2"
     winston "^3.2.1"
 
-"@backstage/plugin-techdocs-react@^1.1.10":
+"@backstage/plugin-techdocs-react@^1.1.10", "@backstage/plugin-techdocs-react@^1.1.11":
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-techdocs-react/-/plugin-techdocs-react-1.1.11.tgz#6fac82367333bbc55676bb55f4105b0b5900a041"
   integrity sha512-Y94nO3aSpCj4w+cr4OkgG9zJEaLCZGQinv962sR00la+x/KmFIkk6Z9zOXdD45Ts8RiTQsxtKFvj2fc7DQl4lQ==
@@ -8091,7 +8091,7 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.5.tgz#38bd1733ae299620771bd414837ade2e57757498"
   integrity sha512-xrO9OoVPqFuYyR/loIHjnbvvyRZREYKLjxV4+dY6v3FQR3stQ9ZxIGkaclF7YhI9hfjpuTbu14hZEy94qKLtOA==
 
-"@types/react-dom@*", "@types/react-dom@<18.0.0":
+"@types/react-dom@*", "@types/react-dom@<18.0.0", "@types/react-dom@^17":
   version "17.0.21"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.21.tgz#85d56965483ce4850f5f03f9234e54a1f47786e5"
   integrity sha512-3rQEFUNUUz2MYiRwJJj6UekcW7rFLOtmK7ajQP7qJpjNdggInl3I/xM4I3Hq1yYPdCGVMgax1gZsB7BBTtayXg==
@@ -8908,7 +8908,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/plugin-tech-radar" "^0.6.8"
     "@backstage/plugin-techdocs" "^1.7.0"
     "@backstage/plugin-techdocs-module-addons-contrib" "^1.1.0"
-    "@backstage/plugin-techdocs-react" "^1.1.10"
+    "@backstage/plugin-techdocs-react" "^1.1.11"
     "@backstage/plugin-user-settings" "^0.7.9"
     "@backstage/theme" "^0.4.2"
     "@internal/plugin-workflow" "^0.1.0"

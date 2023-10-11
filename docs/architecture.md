@@ -19,7 +19,11 @@ The core Backstage UI consists of the following components:
 
 Each plugin is a client-side application that mounts itself on the UI. Plugins are written in TypeScript or JavaScript. They each live in their own directory in backstage/plugins. For example, the source code for the workflow plugin for this task is available at ![scania-backstage-app/plugins/workflow](https://github.com/brahmdev/scania-backstage-app/tree/main/plugins/workflow).
 To create a new FE plugin, we can use below commands,
-yarn new --select plugin
 
+`yarn new --select plugin`
+
+Please refer to [workflow plugin](https://github.com/brahmdev/scania-backstage-app/blob/main/docs/workflow-plugin.md)
+
+For detailed, Plugin architecture please refer to this [link](https://backstage.io/docs/overview/architecture-overview#plugin-architecture)
 
 
