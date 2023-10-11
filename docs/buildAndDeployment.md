@@ -3,6 +3,7 @@
 ## Build
 
 In order to build the Backstage, please following the steps mentioned below:
+
 1. `yarn install --frozen-lockfile`
 2. `yarn tsc`
 3. `yarn build:backend --config ../../app-config.yaml`
