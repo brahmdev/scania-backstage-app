@@ -7,4 +7,5 @@ There are 3 main components in this architecture:
 
 ## The core Backstage UI
 
-![core-backstage-ui](https://)
+![core-backstage-ui](https://github.com/brahmdev/scania-backstage-app/blob/main/docs/assets/scania-backstage-home-page.png)
+
