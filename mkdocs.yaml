@@ -6,4 +6,5 @@ nav:
   - Home: 'index.md'
   - Architecture: 'architecture.md'
   - Build & Deployment: 'buildAndDeployment.md'
+  - Plugins: 'plugins.md'
   - Roadmap: 'roadmap.md'
