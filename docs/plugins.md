@@ -21,7 +21,7 @@ Currently, there is already a plugin avaialable for github-action in [Backstage 
 
 It uses, [Octokit](https://www.npmjs.com/package/octokit) npm library to interact with GitHub API and in the `github-actions` plugin by Backstage it provides many apis but all are related to workflow runs.
 
-So there was a need to have a API(s) that fetches list of Workflows from provided Github Repository and can also dispatch action against it.
+So there was a need to have a API(s) that fetches list of Workflows from provided Github Repository and can also dispatch action against it. And the API needed was taken from [Octokit API docs](https://octokit.github.io/rest.js/v20)
 
 Hence there was a need to write this Plugin and [integrate into the Software Catalog](https://backstage.io/docs/plugins/integrating-plugin-into-software-catalog).
 
