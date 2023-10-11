@@ -5,6 +5,7 @@ Scania Developer Portal is build upon [BackStage](https://backstage.io/). It pro
 Currently it provides integration with one Catalog (demo-web-app) which following connections/integrations:
 - CI/CD (GitHub Actions)
 - APIs being consumed (OAS shown in Swagger-UI)
+- Custom Plugin to trigger the GitHub workflow (for more information about this plugin, please check out [@internal/plugin-workflow](https://github.com/brahmdev/scania-backstage-app/tree/main/plugins/workflow))
 
 
 
