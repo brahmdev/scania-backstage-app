@@ -15,5 +15,11 @@ The core Backstage UI consists of the following components:
 3. Software Templates: For more information, please refer to [documentation](https://backstage.io/docs/features/software-templates/), as this is not currently implemented as part of this setup.
 4. Backstage Search: For more information, please refer to [documentation](https://backstage.io/docs/features/search/), as this is not currently implemented as part of this setup.
 
+## The UI Plugins
+
+Each plugin is a client-side application that mounts itself on the UI. Plugins are written in TypeScript or JavaScript. They each live in their own directory in backstage/plugins. For example, the source code for the workflow plugin for this task is available at ![scania-backstage-app/plugins/workflow](https://github.com/brahmdev/scania-backstage-app/tree/main/plugins/workflow).
+To create a new FE plugin, we can use below commands,
+yarn new --select plugin
+
 
 
