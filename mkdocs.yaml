@@ -1,0 +1,7 @@
+site_name: 'Scania Backstage demo app'
+site_description: 'Main documentation for Demo App'
+plugins:
+  - techdocs-core
+nav:
+  - Home: 'index.md'
+  - Architecture: 'architecture.md'
