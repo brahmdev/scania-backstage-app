@@ -5,4 +5,5 @@ plugins:
 nav:
   - Home: 'index.md'
   - Architecture: 'architecture.md'
+  - Build & Deployment: 'buildAndDeployment.md'
   - Roadmap: 'roadmap.md'
