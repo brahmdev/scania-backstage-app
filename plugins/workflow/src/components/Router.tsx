@@ -21,7 +21,7 @@ import { Routes, Route } from 'react-router-dom';
 import { MissingAnnotationEmptyState } from '@backstage/core-components';
 
 import { WorkflowsComponent } from './WorkflowsComponent';
-import { GITHUB_ACTIONS_ANNOTATION } from './getProjectNameFromEntity';
+import { GITHUB_ACTIONS_ANNOTATION } from '../utils/getProjectNameFromEntity';
 
 /** @public */
 export const isGithubActionsAvailable = (entity: Entity) =>

@@ -20,8 +20,8 @@ import RunIcon from '@material-ui/icons/PlayCircleFilled';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Link as RouterLink } from 'react-router-dom';
 
-import { getProjectNameFromEntity } from '../getProjectNameFromEntity';
-import { getHostnameFromEntity } from '../getHostnameFromEntity';
+import { getProjectNameFromEntity } from '../../utils/getProjectNameFromEntity';
+import { getHostnameFromEntity } from '../../utils/getHostnameFromEntity';
 import { Workflows, useWorkflows } from '../../hooks/useWorkflows';
 
 type Props = {
