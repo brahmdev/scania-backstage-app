@@ -25,11 +25,14 @@ We can build Backstage either as a part of CI/CD pipeline, where the build image
 
 Content for Dockerfile can be found at [packages/backend/Dockerfile](https://github.com/brahmdev/scania-backstage-app/blob/main/packages/backend/Dockerfile)
 
+
+## Running Locally
+
 As a part of deployment for this backstage instance we can build and run the Docker image locally as mentioned below:
 
 1. Clone this repository on your machine
 2. Navigate to root folder
-3. Provide executable access to build script using chmod a+x `backStage-build.sh`
+3. Provide executable access to build script using `chmod a+x backStage-build.sh`
 4. Run the script which will build and spin up the docker image as well, `./backStage-build.sh`.
 5. Acess the Backstage UI at http://localhost:3000.
 
