@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useApi, errorApiRef } from '@backstage/core-plugin-api';
 
 import { githubActionsApiRef } from '../types/GithubActionsApi';
@@ -58,10 +59,17 @@ export function useWorkflows({
     }));
   }, [repo, owner]);
 
-  return {
+ /*  return {
       loading,
       workflows,
       projectName: `${owner}/${repo}`,
       error,
-    } as const;
+    } as const; */
+
+    return useMemo(() => ({ 
+      loading,
+      workflows,
+      projectName: `${owner}/${repo}`,
+      error,
+     }), [loading, workflows, owner, repo]);
 }
