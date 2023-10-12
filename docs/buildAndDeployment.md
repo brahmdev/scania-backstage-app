@@ -32,8 +32,9 @@ As a part of deployment for this backstage instance we can build and run the Doc
 
 1. Clone this repository on your machine
 2. Navigate to root folder
-3. Provide executable access to build script using `chmod a+x backStage-build.sh`
-4. Run the script which will build and spin up the docker image as well, `./backStage-build.sh`.
-5. Acess the Backstage UI at http://localhost:3000.
+3. Provide executable access to build script using `chmod a+x backStage-build.sh` if not already present.
+4. Remember to copy the `environment.sh` file to root folder which is used to set the environment variables.
+5. Run the script which will build and spin up the docker image as well, `./backStage-build.sh`.
+6. Acess the Backstage UI at http://localhost:3000.
 
 
