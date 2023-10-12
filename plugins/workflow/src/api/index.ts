@@ -1,3 +1,2 @@
-export * from './GithubActionsApi';
+export * from '../types/GithubActionsApi';
 export * from './GithubActionsClient';
-export * from './types';

@@ -1,6 +1,6 @@
 import { useApi, errorApiRef } from '@backstage/core-plugin-api';
 
-import { githubActionsApiRef } from '../api/GithubActionsApi';
+import { githubActionsApiRef } from '../types/GithubActionsApi';
 import useAsync from 'react-use/lib/useAsync';
 
 export type Workflows = {

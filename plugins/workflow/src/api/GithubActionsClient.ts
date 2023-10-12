@@ -16,7 +16,7 @@
 
 import { readGithubIntegrationConfigs } from '@backstage/integration';
 import { ScmAuthApi } from '@backstage/integration-react';
-import { GithubActionsApi } from './GithubActionsApi';
+import { GithubActionsApi } from '../types/GithubActionsApi';
 import { Octokit, RestEndpointMethodTypes } from '@octokit/rest';
 import { ConfigApi } from '@backstage/core-plugin-api';
 
@@ -34,7 +34,7 @@ export class GithubActionsClient implements GithubActionsApi {
     this.scmAuthApi = options.scmAuthApi;
   }
 
-  private async getOctokit(hostname: string = 'github.com'): Promise<Octokit> {
+  async getOctokit(hostname: string = 'github.com'): Promise<Octokit> {
     const { token } = await this.scmAuthApi.getCredentials({
       url: `https://${hostname}/`,
       additionalScope: {
@@ -57,14 +57,11 @@ export class GithubActionsClient implements GithubActionsApi {
     hostname?: string;
   }): Promise<RestEndpointMethodTypes["actions"]["listRepoWorkflows"]["response"]> {
     const { hostname, owner, repo } = options;
-
     const octokit = await this.getOctokit(hostname);
-    const workflows = await octokit.actions.listRepoWorkflows({
+    return await octokit.actions.listRepoWorkflows({
       owner,
       repo,
     });
-
-    return workflows;
   }
 
   async runWorkflow(options: {

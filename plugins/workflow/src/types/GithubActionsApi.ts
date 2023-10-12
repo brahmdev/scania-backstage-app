@@ -6,6 +6,13 @@ export const githubActionsApiRef = createApiRef<GithubActionsApi>({
   id: 'workflow',
 });
 
+export type Workflow = {
+  name: string;
+  status: string;
+  started_at?: string;
+  completed_at?: string;
+}
+
 /**
  * A client for fetching information about GitHub actions.
  *

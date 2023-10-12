@@ -22,7 +22,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { getProjectNameFromEntity } from '../getProjectNameFromEntity';
 import { getHostnameFromEntity } from '../getHostnameFromEntity';
-import { Workflows, useWorkflows } from '../useWorkflows';
+import { Workflows, useWorkflows } from '../../hooks/useWorkflows';
 
 type Props = {
     loading: boolean;
