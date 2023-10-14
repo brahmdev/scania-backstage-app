@@ -7,6 +7,7 @@ import { ErrorApi, createApiRef, errorApiRef } from '@backstage/core-plugin-api'
 import { useWorkflows } from '../useWorkflows';
 import { GithubActionsApi, githubActionsApiRef } from "../../types/GithubActionsApi";
 import { waitFor } from "@testing-library/react";
+import { getMockErrorApi, getMockGithubActionsApi } from "../../utils/__tests__/api.mock";
 
 /**
  * The API reference for the {@link @backstage/catalog-client#CatalogApi}.
@@ -36,40 +37,14 @@ type ResultType = {
   error: Error | undefined,
 };
 
-let mockWorkflows = {
-  data: {
-    workflows: [{
-      id: 123,
-      name: 'workflow-1',
-      state: 'active',
-      createdAt: "2023-10-12T20:41:25.421Z",
-      "html_url": "some-url",
-    }]
-  }
-};
-
-type MockGitHubActionsApi = jest.Mocked<Pick<GithubActionsApi, "getWorkflows" | "runWorkflow">>;
-type MockErrorApi = jest.Mocked<Pick<ErrorApi, "post">>;
-
-let mockRunWorkflow = jest.fn();
-const mockGitHubActionsApi: MockGitHubActionsApi = {
-  getWorkflows: jest.fn().mockReturnValue(mockWorkflows),
-  runWorkflow: mockRunWorkflow,
-};
-
+const mockRunWorkflow = jest.fn();
 const mockErrorApiPost = jest.fn();
-const mockErrorApi: MockErrorApi = {
-  post: mockErrorApiPost,
-};
-
-const githubActionsApi = mockGitHubActionsApi as unknown as GithubActionsApi;
-const errorsApi = mockErrorApi as unknown as ErrorApi;
 
 const Wrapper = (props: { children?: React.ReactNode }) => (
   <TestApiProvider
     apis={[
-      [githubActionsApiRef, githubActionsApi],
-      [errorApiRef, errorsApi]
+      [githubActionsApiRef, getMockGithubActionsApi(mockRunWorkflow)],
+      [errorApiRef, getMockErrorApi(mockErrorApiPost)]
     ]}
   >
     {props.children}

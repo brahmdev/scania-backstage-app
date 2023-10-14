@@ -57,9 +57,9 @@ const generatedColumns: TableColumn[] = [
         render: (row: Partial<Workflows>) => {
         const LinkWrapper = () => {
             return (
-            <Link component={RouterLink} to={row.url!}>
-                {row.url}
-            </Link>
+                <Link component={RouterLink} to={row.url!}>
+                    {row.url}
+                </Link>
             );
         };
 
@@ -81,7 +81,7 @@ const generatedColumns: TableColumn[] = [
 
             return (
                 <Tooltip title="Run workflow">
-                    <IconButton onClick={() => handleRunWorkflow(row, alertApi)}>
+                    <IconButton data-testid="run-workflow" onClick={() => handleRunWorkflow(row, alertApi)}>
                     <RunIcon />
                     </IconButton>
                 </Tooltip>
@@ -126,8 +126,7 @@ export const WorkflowsComponent = () => {
     });
 
     const githubHost = hostname || 'github.com';
-    const hasNoWorkflows = !tableProps.loading && !workflows;
-
+    const hasNoWorkflows = !tableProps.loading && (!workflows || workflows.length === 0);
 
     return hasNoWorkflows ? (
         <EmptyState
